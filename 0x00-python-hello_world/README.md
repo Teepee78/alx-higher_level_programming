@@ -11,3 +11,4 @@
 10. 10-check_cycle.c checks if a singly linked list has a cycle in it.
 11. 100-write.py prints a string using the write function in sys module
 12. 101-compile compiles a Python script file
+13. 102-magic_calculation.py calculates figures
