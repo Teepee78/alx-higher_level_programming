@@ -31,15 +31,15 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (list->n < number) /* check if list->n is less than number */
 		{
+			if (list->next == NULL)
+			{
+				new_node->next = NULL;
+				list->next = new_node;
+				break;
+			}
 			/* store present node */
 			temp = list;
 			list = list->next;
-			if (list == NULL)
-			{
-				new_node->next = NULL;
-				list = new_node;
-				break;
-			}
 		}
 		else
 		{
