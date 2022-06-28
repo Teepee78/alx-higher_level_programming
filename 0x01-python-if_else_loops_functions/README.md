@@ -12,3 +12,6 @@
 11. 11-pow.py computes a to the power of b and returns the result
 12. 12-fizzbuzz.py prints numbers 1 to 100
 13. 13-insert_number.c inserts a number into a sorted linked list
+14. 100-print_tebahpla.py prints the ascii alphabets in reverse order, alternating lowercase and uppercase
+15. 101-remove_char_at.py creates a copy of a string, removing a specified character
+16. 102-magic_calculation.py python bytecode
