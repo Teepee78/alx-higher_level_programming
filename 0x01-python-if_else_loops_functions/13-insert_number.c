@@ -33,6 +33,12 @@ listint_t *insert_node(listint_t **head, int number)
 		{
 			/* store present node */
 			temp = list;
+			if (list->next == NULL)
+			{
+				new_node->next = NULL;
+				list->next = new_node;
+				break;
+			}
 			list = list->next;
 		}
 		else
@@ -41,11 +47,6 @@ listint_t *insert_node(listint_t **head, int number)
 			{
 				new_node->next = list;
 				*head = new_node;
-			} else if (list->next == NULL) /* end of list */
-			{
-				printf("Got here\n");
-				new_node->next = NULL;
-				list->next = new_node;
 			} else
 			{
 				new_node->next = list;
