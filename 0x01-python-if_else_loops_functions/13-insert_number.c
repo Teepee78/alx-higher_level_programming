@@ -43,6 +43,7 @@ listint_t *insert_node(listint_t **head, int number)
 				*head = new_node;
 			} else if (list->next == NULL) /* end of list */
 			{
+				printf("Got here\n");
 				new_node->next = NULL;
 				list->next = new_node;
 			} else
