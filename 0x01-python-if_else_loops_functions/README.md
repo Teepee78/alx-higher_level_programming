@@ -8,3 +8,6 @@
 7. 7-islower.py checks for lowercase character
 8. 8-uppercase.py prints a string in uppercase
 9. 9-print_last_digit.py prints the last digit of a number
+10. 10-add.py adds to numbers and returns the result
+11. 11-pow.py computes a to the power of b and returns the result
+12. 12-fizzbuzz.py prints numbers 1 to 100
