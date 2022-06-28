@@ -31,16 +31,15 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (list->n < number) /* check if list->n is less than number */
 		{
+			/* store present node */
+			temp = list;
+			list = list->next;
 			if (list->next == NULL)
 			{
-				printf("Last node\n");
 				new_node->next = NULL;
 				list->next = new_node;
 				break;
 			}
-			/* store present node */
-			temp = list;
-			list = list->next;
 		}
 		else
 		{
