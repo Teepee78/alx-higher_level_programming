@@ -33,13 +33,13 @@ listint_t *insert_node(listint_t **head, int number)
 		{
 			/* store present node */
 			temp = list;
-			if (list->next == NULL)
+			list = list->next;
+			if (list == NULL)
 			{
 				new_node->next = NULL;
-				list->next = new_node;
+				list = new_node;
 				break;
 			}
-			list = list->next;
 		}
 		else
 		{
