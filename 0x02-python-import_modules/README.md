@@ -4,3 +4,5 @@
 3. 3-infinite_add.py prints the result of the addition of all arguments
 4. 4-hidden_discovery.py prints all the names defined by the compiled module
 5. 5-variable_load.py imports a variable and prints its value
+6. 100-my_calculator.py imports all functions from calculator_1.py and performs basic operations
+7. 101-easy_print.py prints #pythoniscool
