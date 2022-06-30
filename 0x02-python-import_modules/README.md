@@ -6,3 +6,5 @@
 5. 5-variable_load.py imports a variable and prints its value
 6. 100-my_calculator.py imports all functions from calculator_1.py and performs basic operations
 7. 101-easy_print.py prints #pythoniscool
+8. 102-magic_calculation.py bytecode
+9. 103-fast_alphabet.py prints the alphabet in uppercase
