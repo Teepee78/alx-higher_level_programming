@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-
     from calculator_1 import add, sub, mul, div
     from sys import argv, exit
 
@@ -14,7 +13,7 @@ if __name__ == "__main__":
         a = int(argv[1])
         operator = argv[2]
         b = int(argv[3])
-        
+
     # Check operator and call relative function
     if operator == "+":
         result = add(a, b)
