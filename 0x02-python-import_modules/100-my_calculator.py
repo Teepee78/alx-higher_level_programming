@@ -9,10 +9,10 @@ if __name__ == "__main__":
     if argc != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    else:
-        a = int(argv[1])
-        operator = argv[2]
-        b = int(argv[3])
+
+    a = int(argv[1])
+    operator = argv[2]
+    b = int(argv[3])
 
     # Check operator and call relative function
     if operator == "+":
