@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
-    from sys import argv
+    from sys import argv, exit
 
     argc = len(argv) - 1
 
@@ -24,6 +24,6 @@ if __name__ == "__main__":
     elif operator == "/":
         result = div(a, b)
     else:
-        print("Unknown operator, Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     print("{:d} {} {:d} = {:d}".format(a, operator, b, result))
