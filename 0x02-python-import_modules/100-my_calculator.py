@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
-    from sys import argv, exit
+    from sys import argv
 
     argc = len(argv) - 1
 
