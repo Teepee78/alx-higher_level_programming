@@ -5,6 +5,8 @@ def print_matrix_integer(matrix=[[]]):
     Args:
         matrix: Matrix of integers
     """
+    if not matrix[0]:
+        print()
 
     for i in matrix:
         for j in i:
