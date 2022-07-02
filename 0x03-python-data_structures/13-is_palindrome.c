@@ -64,7 +64,7 @@ int is_palindrome(listint_t **head)
 	listint_t *reversed, *temp, *singly_list = *head;
 
 	/* check if list is empty */
-	if (*head == NULL)
+	if (*head == NULL || head == NULL || (*head)->next == NULL)
 		return (1);
 
 	/* reverse list */
