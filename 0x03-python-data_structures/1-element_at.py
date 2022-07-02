@@ -10,7 +10,7 @@ def element_at(my_list, idx):
         Element at idx in my_list
     """
 
-    if idx\ < 0:
+    if idx < 0:
         return None
     if idx > (len(my_list) - 1):
         # idx is out of range
