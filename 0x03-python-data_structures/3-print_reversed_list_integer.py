@@ -5,12 +5,6 @@ def print_reversed_list_integer(my_list=[]):
     Args:
         my_list: list of integers
     """
-    lenList = len(my_list)
-
-    if lenList == 0:
-        return
-
-    idx = lenList - 1
-    while idx >= 0:
-        print("{:d}".format(my_list[idx]))
-        idx -= 1
+    if my_list:
+        for idx in my_list[::-1]:
+            print("{:d}".format(idx))
