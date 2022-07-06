@@ -11,3 +11,7 @@
 10. 10-best_score.py returns a key with the biggest integer value
 11. 11-multiply_list_map.py returns a list with all values multiplied by a number without using any loops
 12. 12-roman_to_int.py converts roman numerals to integer
+13. 100-weight_average.py returns the weighted average of all integers tuple
+14. 101-square_matrix_map.py computes the square value of all integers of a matrix using map
+15. 102-complex_delete.py deletes keys with a specific value in a dictionary
+16. 103-python.c print basic info about Python lists and Python bytes objects
