@@ -3,13 +3,19 @@ def weight_average(my_list=[]):
     if my_list is None:
         return 0
 
-    numerator = 0
-    denominator = 0
+    numerator = None
+    denominator = None
     for tuple in my_list:
-        denominator += tuple[-1]
+        if denominator is None:
+            denominator = tuple[-1]
+        else:
+            denominator += tuple[-1]
         mult = 1
         for i in tuple:
             mult *= i
-        numerator += mult
+        if numerator is None:
+            numerator = mult
+        else:
+            numerator += mult
 
     return numerator / denominator
