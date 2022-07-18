@@ -8,3 +8,4 @@
 7. 100-safe_print_integer_err.py prints an integer
 8. 8. 101-safe_function.py executes a function safely
 9. 102-magic_calculation.py magic calculation
+10. 103-python.c C functions that print some basic info about Python lists, Python bytes an Python float objects.
