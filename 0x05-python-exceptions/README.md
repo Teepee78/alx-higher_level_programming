@@ -7,3 +7,4 @@
 6. 6-raise_exception_msg.py raises a name exception with a message
 7. 100-safe_print_integer_err.py prints an integer
 8. 8. 101-safe_function.py executes a function safely
+9. 102-magic_calculation.py magic calculation
