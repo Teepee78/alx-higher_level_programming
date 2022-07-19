@@ -6,7 +6,7 @@
 
 
 class Square:
-    """A Square"""
+    """A Square class with validated private instance attribute size"""
 
 
     def __init__(self, size):
