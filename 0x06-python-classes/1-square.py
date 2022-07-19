@@ -7,12 +7,11 @@
 
 
 class Square:
-    """A Square class with validated private instance attribute size"""
+    """A Square class with validated private instance attribute size
+
+    Args:
+        size (int): size of square
+    """
 
     def __init__(self, size):
-        """Initialize a square
-
-        Args:
-            size (int): size of square
-        """"
         self.__size = size
