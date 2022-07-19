@@ -1,34 +1,36 @@
 #!/usr/bin/python3
-"""Creates a square"""
+"""Creates a square
+
+Attributes:
+    Square (class): a class that creates a square
+"""
 
 
 class Square:
-    """A Square"""
+   """A Square class with validated private instance attribute size
+
+    Args:
+        size (int): size of square
+    """
 
     def __init__(self, size=0):
-        """Initialize a square
-
-        Args:
-            size: size of square
-        """
         self.__size = size
 
     @property
     def size(self):
-        """Size property getter"""
-        return self.__size
-
-    @size.setter
-    def size(self, value):
-        """Size property setter
+        """Size property
 
         Args:
             value: value of size
         """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("size must be >=0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
