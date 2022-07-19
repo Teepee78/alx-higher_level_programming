@@ -7,7 +7,7 @@ Attributes:
 
 
 class Square:
-   """A Square class with validated private instance attribute size
+    """A Square class with validated private instance attribute size
 
     Args:
         size (int): size of square
