@@ -7,3 +7,4 @@
 6. 6-square.py defines a square based on 5
 7. 100-singly_list.py creates a singly linked list
 8. 101-square.py defines a square based on 6
+9. 102-square.py defines a square based on 4
