@@ -81,22 +81,21 @@ class Square:
 
     def my_print(self):
         """Prints the square with #"""
-        x = self.__position[0]
         if self.__size == 0:
             print()
         else:
             for j in range(self.__position[1]):
                 print()
             for i in range(self.__size):
-                print("{}{}".format(" " * x, "#" * self.__size))
+                print("{}{}".format(" " * self.__position[0], "#" * self.__size))
 
     def __str__(self):
         """Returns string version of square"""
-        if self.__size == 0:
+        if self.size == 0:
             return ""
-        string = "\n" * self.__position[1]
-        for i in range(self.__size):
-            string = string + "{}{}".format(" ", "#" * self.__size)
-            if i < self.__size - 1:
+        string = "\n" * self.position[1]
+        for i in range(self.size):
+            string = string + "{}{}".format(" " * self.position[0], "#" * self.size)
+            if i < self.size - 1:
                 string = string + "\n"
         return string
