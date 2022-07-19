@@ -94,7 +94,7 @@ class Square:
         """Returns string version of square"""
         if self.__size == 0:
             return ""
-        string = "\n" * self.position[1]
+        string = "\n" * self.__position[1]
         for i in range(self.__size):
             string = string + "{}{}".format(" ", "#" * self.__size)
             if i < self.__size - 1:
