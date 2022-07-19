@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Creates a square"""
+"""Creates a square
+
+    Attributes:
+        Square (class): a class that creates a square"""
 
 
 class Square:
