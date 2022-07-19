@@ -70,10 +70,10 @@ class SinglyLinkedList:
         temp = self.__head
         list_str = ""
         while temp is not None:
-            list_str += str(temp.data)
+            list_str = list_str + str(temp.data)
             temp = temp.next_node
             if temp is not None:
-                list_str += "\n"
+                list_str = list_str + "\n"
         return list_str
 
     def sorted_insert(self, value):
