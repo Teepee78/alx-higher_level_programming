@@ -45,13 +45,16 @@ class Square:
 
         setter validates position is a tuple of positive integers
 
+        Raises:
+            TypeError: if position is not a tuple of 2 +ve ints
         """
         return self.__position
 
     @position.setter
     def position(self, value):
         if not self.__checkPosition(value):
-            raise TypeError("position must be a tuple with 2 positive integers")
+            raise TypeError("position must be a tuple\
+                            with 2 positive integers")
         else:
             self.__position = value
 
