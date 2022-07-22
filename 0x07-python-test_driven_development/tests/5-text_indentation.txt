@@ -1,0 +1,29 @@
+This module contains only one function "text_indentation"
+text_indentation prints a text with 2 new lines after any of the characters '.', '?' and ':'
+
+example:
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+    >>> text_indentation("This is a text string. right?")
+    This is a text string.
+    <BLANKLINE>
+    right?
+    <BLANKLINE>
+    >>> text_indentation("chris")
+    chris
+
+it takes one argument,text
+text must be a string, there shall be no space at the beginning or end of each printed line
+
+example:
+    >>> text_indentation(4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> text_indentation("word.")
+    word.
+    <BLANKLINE>

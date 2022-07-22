@@ -1,0 +1,56 @@
+This module has only one function "add_integer"
+
+add_integer takes two arguments, a and optional argument b with a default of 98.
+Returns an integer, the addition of a and b
+
+example:
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(2, 3)
+    5
+    >>> add_integer(2)
+    100
+    >>> add_integer(100, -2)
+    98
+    >>> add_integer(0)
+    98
+    >>> add_integer(2, 0)
+    2
+
+a and b must be integers or floats, otherwise TypeError is raised with the message
+"a must be an integer" or "b must be an integer"
+
+example:
+    >>> add_integer("two", 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer("two")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(3, "two")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+    >>> add_integer(None, 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(3, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(True, 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(4, False)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+a and b must be first casted into integers if they are float
+
+example:
+    >>> add_integer(2.0, 3.0)
+    5
+    >>> add_integer(2, 3.0)
+    5
+    >>> add_integer(2.0, 3)
+    5

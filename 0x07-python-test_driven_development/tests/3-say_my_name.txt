@@ -1,0 +1,28 @@
+This module contains only one function "say_my_name"
+
+say_my_name prints My name is <first name> <last name>
+it takes two arguments first_name and optional last_name
+
+example:
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+    >>> say_my_name("Tolu", "Phillips")
+    My name is Tolu Phillips
+    >>> say_my_name("Tolu") #doctest: +NORMALIZE_WHITESPACE
+    My name is Tolu
+
+first_name and last_name must be strings
+
+example:
+    >>> say_my_name(12, "Cole")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+    >>> say_my_name("Prowse", 13)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+    >>> say_my_name(" ") #doctest: +NORMALIZE_WHITESPACE
+    My name is
+    >>> say_my_name(" ", "Phillips")
+    My name is   Phillips
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
