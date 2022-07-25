@@ -72,6 +72,10 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         rectangle = ""
+        row = "#" * self.width
         for i in range(self.height):
-            rectangle = rectangle + "{}".format("#" * self.width) + "\n"
+            if i == (self.height - 1):
+                rectangle = rectangle + row
+            else:
+                rectangle = rectangle + row + "\n"
         return rectangle
