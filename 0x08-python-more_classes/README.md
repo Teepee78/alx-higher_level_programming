@@ -8,3 +8,4 @@
 7. 7-rectangle.py defines a rectangle based on 6
 8. 8-rectangle.py defines a rectangle based on 7
 9. 9-rectangle.py defines a rectangle based on 8
+10. 101-nqueens.py solves the N queens problem
