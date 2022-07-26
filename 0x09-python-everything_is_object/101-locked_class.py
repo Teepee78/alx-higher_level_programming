@@ -12,5 +12,4 @@ class LockedClass:
         if attr != "first_name":
             err = "'LockedClass' object has no attribute '{}'".format(attr)
             raise AttributeError(err)
-            return
         self.__dict__.update({attr: value})
