@@ -49,3 +49,11 @@ a class Square that inherits from Rectangle(9-rectangle.py)
 ### 11-square.py
 
 a class Square that inherits from Rectangle(9-rectangle.py) based on 10-square.py
+
+### 100-my_int.py
+
+a class MyInt that inherits from int and inverts == and != operators
+
+### 101-add_attribute.py
+
+a function that adds a new attribute to an object if it is possible
