@@ -51,3 +51,11 @@ a class Student based on 10-student.py
 ### 12-pascal_triangle.py
 
 a function that returns a list of lists of integers representing the pascal's triangle
+
+### 100-append_after.py
+
+a function that inserts a line of text to a file, after each line containing a specific string
+
+### 101-stats.py
+
+a script that reads stdin line by line and computes metrics
