@@ -102,6 +102,16 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(r2.id, 5)
         self.assertEqual(r2.height, 7)
 
+    def test_update_error(self):
+        r2 = Rectangle(2, 3)
+        """Test update with invalid attributes"""
+        with self.assertRaises(AttributeError):
+            r2.update(width=8)
+            self.assertEqual(r2.weight, 8)
+        with self.assertRaises(IndexError):
+            r2.update(1, 2, 3, 4, 5, 6, 7)
+            self.assertEqual(r2.id, 1)
+
     def test_to_dictionary(self):
         """Test to_dictionary method"""
         r1 = Rectangle(2, 3, 4, 5, 6)
