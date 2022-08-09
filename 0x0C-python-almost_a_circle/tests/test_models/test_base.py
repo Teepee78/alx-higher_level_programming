@@ -10,6 +10,9 @@ from models.square import Square
 class TestBaseClass(unittest.TestCase):
     """Unittests for base.py"""
 
+    def setUp(self):
+        Base.__Base__nb__objects = 0
+
     def test_init(self):
         """Initialize with no arguments"""
         b1 = Base()
