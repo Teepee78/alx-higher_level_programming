@@ -80,8 +80,8 @@ class Base:
             # create list of dictionaries
             json = cls.from_json_string(f.read())
 
-            for dict in json:
-                instances.append(cls.create(**dict))
+            for dic in json:
+                instances.append(cls.create(**dic))
 
         return instances
 
@@ -124,11 +124,11 @@ class Base:
             csv_file = csv.DictReader(f)
             instances = []
 
-            for dict in csv_file:
+            for dic in csv_file:
                 # cast each field to the appropriate type
-                for key, value in dict.items():
-                    dict[key] = int(value)
-                instances.append(cls.create(**dict))
+                for key, value in dic.items():
+                    dic[key] = int(value)
+                instances.append(cls.create(**dic))
 
         return instances
 

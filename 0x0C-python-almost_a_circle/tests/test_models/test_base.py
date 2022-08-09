@@ -51,33 +51,33 @@ class TestBaseClass(unittest.TestCase):
         b1 = Base()
         self.assertEqual(Base.to_json_string(None), "[]")
         self.assertEqual(Base.to_json_string([]), "[]")
-        dict = [{'name': 'abbey'}]
-        self.assertEqual(b1.to_json_string(dict), '[{"name": "abbey"}]')
+        dic = [{'name': 'abbey'}]
+        self.assertEqual(b1.to_json_string(dic), '[{"name": "abbey"}]')
 
     def test_from_json_string(self):
         """Tests from_json_string method"""
         self.assertEqual(Base.from_json_string(None), [])
         self.assertEqual(Base.from_json_string(""), [])
-        dict = [{'name': 'abbey'}]
-        self.assertEqual(Base.from_json_string('[{"name": "abbey"}]'), dict)
+        dic = [{'name': 'abbey'}]
+        self.assertEqual(Base.from_json_string('[{"name": "abbey"}]'), dic)
 
     def test_create(self):
         """Test create method"""
-        dict = {
+        dic = {
             "id": 14,
             "x": 0,
             "y": 0,
             "width": 3,
             "height": 5
         }
-        self.assertIsInstance(Rectangle.create(**dict), Rectangle)
-        dict_1 = {
+        self.assertIsInstance(Rectangle.create(**dic), Rectangle)
+        dic_1 = {
             "id": 13,
             "x": 0,
             "y": 0,
             "size": 3,
         }
-        self.assertIsInstance(Square.create(**dict), Square)
+        self.assertIsInstance(Square.create(**dic), Square)
 
     def test_save_to_file(self):
         """Test save_to_file method"""
