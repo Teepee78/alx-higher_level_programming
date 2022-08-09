@@ -11,16 +11,16 @@ class TestBaseClass(unittest.TestCase):
     """Unittests for base.py"""
 
     def setUp(self):
-        Base.__Base__nb__objects = 0
+        Base._Base__nb_objects = 0
 
     def test_init(self):
         """Initialize with no arguments"""
         b1 = Base()
-        self.assertEqual(b1.id, 3)
+        self.assertEqual(b1.id, 1)
         b2 = Base()
-        self.assertEqual(b2.id, 4)
+        self.assertEqual(b2.id, 2)
         b3 = Base()
-        self.assertEqual(b3.id, 5)
+        self.assertEqual(b3.id, 3)
 
     def test_init_param(self):
         """Initialize with arguments"""
@@ -38,11 +38,11 @@ class TestBaseClass(unittest.TestCase):
         b1 = Base(2)
         self.assertEqual(b1.id, 2)
         b2 = Base()
-        self.assertEqual(b2.id, 6)
+        self.assertEqual(b2.id, 1)
         b3 = Base(4)
         self.assertEqual(b3.id, 4)
         b4 = Base()
-        self.assertEqual(b4.id, 7)
+        self.assertEqual(b4.id, 2)
 
     def test_init_too_many(self):
         """Initialize with too many arguments"""
