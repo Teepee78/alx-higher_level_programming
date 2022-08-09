@@ -4,6 +4,7 @@ import json
 from os import path
 import csv
 import turtle
+from random import random
 
 
 class Base:
