@@ -69,3 +69,19 @@ This directory contains SQL answer scripts
 ### 16-no_link.sql
 
     Lists all records of the table
+
+### 100-move_to_utf8.sql
+
+    Script that converts hbtn_0c_0 database to UTF8
+
+### 101-avg_temperatures.sql
+
+    Displays the average temperature (Fahrenheit) by city ordered by temperature (descending)
+
+### 102-top_city.sql
+
+    Displays the top 3 of cities temperature during July and August ordered by temperature (descending)
+
+### 103-max_state.sql
+
+    Displays the max temperature of each state (ordered by State name)
