@@ -55,3 +55,15 @@
 ### 13-add.js
 
     Returns the addition of 2 integers
+
+### 100-let_me_const.js
+
+    Modifies the value of myVar
+
+### 101-call_me_moby.js
+
+    Executes x times a function
+
+### 102-add_me_maybe.js
+
+    Increments a number and calls a function with the number
