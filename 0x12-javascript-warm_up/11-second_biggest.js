@@ -2,6 +2,18 @@
 
 const args = process.argv;
 
+function bubbleSort (list) {
+  for (let i = 0; i < list.length - 1; i++) {
+    for (let j = 0; j < list.length - 1; j++) {
+      if (list[j] < list[j + 1]) {
+        const temp = list[j];
+        list[j] = list[j + 1];
+        list[j + 1] = temp;
+      }
+    }
+  }
+}
+
 if (args.length <= 3) {
   console.log(0);
 } else {
@@ -12,6 +24,6 @@ if (args.length <= 3) {
     newArr[j] = parseInt(args[i]);
   }
 
-  newArr.sort().reverse();
+  bubbleSort(newArr);
   console.log(newArr[1]);
 }
