@@ -17,4 +17,4 @@ db = MySQLdb.connect(
 
 cursor = db.cursor()
 
-rows = cursor.execute("SELECT * FROM states.hbtn_0e_0_usa")
+rows = cursor.execute("SELECT * FROM states")
