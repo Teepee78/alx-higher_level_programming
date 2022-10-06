@@ -1,1 +1,0 @@
-SELECT * FROM states.hbtn_0e_0_usa WHERE name = 'Arizona';

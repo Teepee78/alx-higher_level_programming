@@ -16,3 +16,7 @@
 
     Takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
     Safe from injection
+
+### 4-cities_by_state.py
+
+    Lists all cities from the database hbtn_0e_4_usa
