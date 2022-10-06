@@ -19,8 +19,11 @@ if __name__ == '__main__':
         db=database
     )
     cursor = db.cursor()
-    cursor.execute("select cities.id, cities.name, states.name from cities inner join
- states on cities.state_id=states.id;")
+    cursor.execute("
+                   SELECT cities.id, cities.name, states.name
+                   FROM cities
+                   INNER JOIN states ON cities.state_id=states.id"
+                   )
     rows = cursor.fetchall()
 
     for row in rows:
