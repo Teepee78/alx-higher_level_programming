@@ -38,13 +38,12 @@ if __name__ == '__main__':
     cursor = db.cursor()
     cursor.execute("""
         SELECT name FROM cities
-        WHERE id = (
+        WHERE state_id = (
             SELECT id FROM states
             WHERE name = '{}'
         )
     """.format(state))
     states = cursor.fetchall()
-    print(states)
     print(", ".join([x for i in states for x in i]))
 
     cursor.close()
