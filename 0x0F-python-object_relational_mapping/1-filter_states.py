@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""This module lists all states from hbtn_0e_0_usa"""
+"""
+This module lists all states with a name starting with N
+from hbtn_0e_0_usa
+"""
 import MySQLdb
 from sys import argv
 
@@ -14,9 +17,8 @@ db = MySQLdb.connect(
     passwd=password,
     db=database
 )
-
 cursor = db.cursor()
-cursor.execute("SELECT * FROM states")
+cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
 rows = cursor.fetchall()
 
 for row in rows:
