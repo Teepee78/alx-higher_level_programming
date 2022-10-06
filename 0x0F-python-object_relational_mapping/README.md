@@ -7,3 +7,7 @@
 ### 1-filter_states.py
 
     Lists all states with a name starting with "N"
+
+### 2-my_filter_states.py
+
+    Takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
