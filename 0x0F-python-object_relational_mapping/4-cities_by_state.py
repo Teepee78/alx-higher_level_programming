@@ -19,7 +19,8 @@ if __name__ == '__main__':
         db=database
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM cities ORDER BY cities.id")
+    cursor.execute("select cities.id, cities.name, states.name from cities inner join
+ states on cities.state_id=states.id;")
     rows = cursor.fetchall()
 
     for row in rows:
