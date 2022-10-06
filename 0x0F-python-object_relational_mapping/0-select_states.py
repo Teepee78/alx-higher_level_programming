@@ -16,7 +16,7 @@ db = MySQLdb.connect(
 )
 
 cursor = db.cursor()
-
-rows = cursor.execute("SELECT * FROM states")
+cursor.execute("SELECT * FROM states")
+rows = cursor.fetchall()
 
 print(rows)
