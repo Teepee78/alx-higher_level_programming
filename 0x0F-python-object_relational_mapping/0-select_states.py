@@ -18,3 +18,5 @@ db = MySQLdb.connect(
 cursor = db.cursor()
 
 rows = cursor.execute("SELECT * FROM states")
+
+print(rows)
