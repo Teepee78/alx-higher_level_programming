@@ -19,4 +19,5 @@ cursor = db.cursor()
 cursor.execute("SELECT * FROM states")
 rows = cursor.fetchall()
 
-print(rows)
+for row in rows:
+    print(row)
