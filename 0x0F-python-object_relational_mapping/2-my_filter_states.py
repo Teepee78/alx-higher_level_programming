@@ -22,7 +22,7 @@ if __name__ == '__main__':
         db=database
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name={}".format(name))
+    cursor.execute("SELECT * FROM states WHERE name='{}'".format(name))
     rows = cursor.fetchall()
 
     for rows in rows:
