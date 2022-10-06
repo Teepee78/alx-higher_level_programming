@@ -25,7 +25,7 @@ if __name__ == '__main__':
     cursor.execute("SELECT * FROM states WHERE name = '{}'".format(name))
     rows = cursor.fetchall()
 
-    for rows in rows:
+    for row in rows:
         print(row)
 
     cursor.close()
