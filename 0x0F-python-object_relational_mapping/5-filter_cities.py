@@ -44,7 +44,7 @@ if __name__ == '__main__':
         )
     """.format(name))
     states = cursor.fetchall()
-    print(", ".join(states))
+    print(", ".join([x for i in states for x in i]))
 
     cursor.close()
     db.close()
