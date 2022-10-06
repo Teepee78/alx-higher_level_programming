@@ -20,3 +20,7 @@
 ### 4-cities_by_state.py
 
     Lists all cities from the database hbtn_0e_4_usa
+
+### 5-filter_cities.py
+
+    takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa
