@@ -42,8 +42,9 @@ if __name__ == '__main__':
             SELECT id FROM states
             WHERE name = '{}'
         )
-    """.format(name))
+    """.format(state))
     states = cursor.fetchall()
+    print(states)
     print(", ".join([x for i in states for x in i]))
 
     cursor.close()
