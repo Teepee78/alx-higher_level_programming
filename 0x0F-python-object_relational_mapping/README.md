@@ -68,3 +68,7 @@
 ### 100-relationship_states_cities.py
 
     Creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa
+
+### 101-relationship_states_cities_list.py
+
+    Lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa
