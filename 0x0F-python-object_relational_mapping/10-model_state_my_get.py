@@ -40,8 +40,10 @@ if __name__ == '__main__':
     # Query database
     state = session.query(State).filter(State.name == state_name).all()
     # Print result
-    if state and state[1] == state_name:
-        print(f"{state.id}")
+    if state:
+        for x in state:
+            if x.name == state_name:
+                print(f"{x.id}")
     else:
         print("Not found")
     session.close()
