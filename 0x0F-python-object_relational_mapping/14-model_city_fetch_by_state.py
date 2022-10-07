@@ -7,6 +7,9 @@ from sys import argv
 from model_city import City
 from model_state import Base, State
 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
 # credentials
 user = argv[1]
 passwd = argv[2]
