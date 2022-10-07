@@ -72,3 +72,7 @@
 ### 101-relationship_states_cities_list.py
 
     Lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa
+
+### 102-relationship_cities_states_list.py
+
+    Lists all City objects from the database hbtn_0e_101_usa
