@@ -48,3 +48,7 @@
 ### 11-model_state_insert.py
 
     Adds the State object “Louisiana” to the database hbtn_0e_6_usa
+
+### 12-model_state_update_id_2.py
+
+    Changes the name of a State object from the database hbtn_0e_6_usa
