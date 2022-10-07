@@ -64,3 +64,7 @@
 ### 14-model_city_fetch_by_state.py
 
     Prints all City objects from the database hbtn_0e_14_usa
+
+### 100-relationship_states_cities.py
+
+    Creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa
