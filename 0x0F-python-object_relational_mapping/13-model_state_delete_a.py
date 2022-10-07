@@ -23,6 +23,7 @@ if __name__ == '__main__':
     session = Session()
     # Query objects
     states = session.query(State).filter(State.name.like("%a%"))
-    states.delete()
+    for state in states:
+        session.delete(state)
     session.commit()
     session.close()
