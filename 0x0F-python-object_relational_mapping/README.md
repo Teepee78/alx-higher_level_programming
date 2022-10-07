@@ -28,3 +28,7 @@
 ### model_state.py
 
     Contains the class definition of a State and an instance Base = declarative_base()
+
+### 7-model_state_fetch_all.py
+
+    Lists all State objects from the database hbtn_0e_6_usa

@@ -5,7 +5,6 @@ This module defines the State class
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
-from sys import argv
 
 Base = declarative_base()
 
