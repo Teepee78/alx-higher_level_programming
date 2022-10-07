@@ -24,14 +24,14 @@ def authenthicate(string):
         return new_string
 
 
-# credentials
-user = argv[1]
-passwd = argv[2]
-db = argv[3]
-url = f"mysql+mysqldb://{user}:{passwd}@localhost/{db}"
-state = authenthicate(argv[4])
-
 if __name__ == '__main__':
+    # credentials
+    user = argv[1]
+    passwd = argv[2]
+    db = argv[3]
+    url = f"mysql+mysqldb://{user}:{passwd}@localhost/{db}"
+    state = authenthicate(argv[4])
+
     # connect to database
     engine = create_engine(url, pool_pre_ping=True)
     # Create session

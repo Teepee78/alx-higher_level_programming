@@ -9,13 +9,14 @@ from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-# credentials
-user = argv[1]
-passwd = argv[2]
-db = argv[3]
-url = f"mysql+mysqldb://{user}:{passwd}@localhost/{db}"
 
 if __name__ == '__main__':
+    # credentials
+    user = argv[1]
+    passwd = argv[2]
+    db = argv[3]
+    url = f"mysql+mysqldb://{user}:{passwd}@localhost/{db}"
+
     # connect to database
     engine = create_engine(url, pool_pre_ping=True)
     # create session
