@@ -20,6 +20,8 @@ if __name__ == '__main__':
 
     # connect to database
     engine = create_engine(url, pool_pre_ping=True)
+    # Create tables
+    Base.metadata.create_all(engine)
     # Create session
     Session = sessionmaker(bind=engine)
     session = Session()
