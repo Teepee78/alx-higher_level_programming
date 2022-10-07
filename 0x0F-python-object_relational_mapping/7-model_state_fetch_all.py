@@ -24,4 +24,4 @@ if __name__ == '__main__':
     states = session.query(State).order_by(State.id.asc()).all()
     # Print result
     for state in states:
-        print(state)
+        print(f"{state.id}: {state.name}")
