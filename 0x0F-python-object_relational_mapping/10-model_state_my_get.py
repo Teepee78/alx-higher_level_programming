@@ -30,7 +30,7 @@ if __name__ == '__main__':
     passwd = argv[2]
     db = argv[3]
     url = f"mysql+mysqldb://{user}:{passwd}@localhost/{db}"
-    state = authenthicate(argv[4])
+    state_name = authenthicate(argv[4])
 
     # connect to database
     engine = create_engine(url, pool_pre_ping=True)
@@ -38,9 +38,9 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
     # Query database
-    state = session.query(State).filter(State.name == state).all()
+    state = session.query(State).filter(State.name == state_name).all()
     # Print result
-    if (state):
+    if state and state[1] == state_name:
         print(f"{state.id}")
     else:
         print("Not found")
