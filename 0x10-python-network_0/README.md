@@ -29,3 +29,15 @@
 ### 6-peak.py
 
     Finds the peak of a list of integers
+
+### 100-status_code.sh
+
+    Sends a request to a URL passed as an argument, and displays only the status code of the response
+
+### 101-post_json.sh
+
+    Sends a JSON POST request to a URL passed as the first argument, and displays the body of the response
+
+### 102-catch_me.sh
+
+    Makes a request to 0.0.0.0:5000/catch_me that causes the server to respond with a message containing You got me!
