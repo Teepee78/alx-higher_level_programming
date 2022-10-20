@@ -25,3 +25,7 @@
 ### 5-post_params.sh
 
     Sends a POST request to the passed URL, and displays the body of the response
+
+### 6-peak.py
+
+    Finds the peak of a list of integers
