@@ -12,7 +12,9 @@ if __name__ == '__main__':
     password = argv[2]
 
     response = requests.get(
-        "https://api.github.com/user", params={'login': username}, auth=(username, password)
+        "https://api.github.com/user",
+        params={'login': username},
+        auth=(username, password)
     )
 
     if "id" in response.json():
