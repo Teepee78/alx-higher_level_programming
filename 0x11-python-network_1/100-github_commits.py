@@ -18,7 +18,6 @@ if __name__ == '__main__':
     while i < 10:
         co = commits[i]
         print(
-            f"{co.get('sha')}: {co[i].\
-            get('commit').get('author').get('name')}"
+            f"{co.get('sha')}: {co[i].get('commit').get('author').get('name')}"
         )
         i += 1
