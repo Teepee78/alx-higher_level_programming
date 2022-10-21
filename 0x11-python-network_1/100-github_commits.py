@@ -15,9 +15,12 @@ if __name__ == '__main__':
     )
     commits = response.json()
     i = 0
-    while i < 10:
-        co = commits[i]
-        print(
-            f"{co.get('sha')}: {co.get('commit').get('author').get('name')}"
-        )
-        i += 1
+    try:
+        while i < 10:
+            co = commits[i]
+            print(
+                f"{co.get('sha')}: {co.get('commit').get('author').get('name')}"
+            )
+            i += 1
+    except IndexError:
+        pass
