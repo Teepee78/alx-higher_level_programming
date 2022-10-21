@@ -16,6 +16,9 @@ if __name__ == '__main__':
     commits = response.json()
     i = 0
     while i < 10:
+        co = commits[i]
         print(
-            f"{commits[i].get('sha')}: {commits[i].get('commit').get('author').get('name')}")
+            f"{co.get('sha')}: {co[i].\
+            get('commit').get('author').get('name')}"
+        )
         i += 1
