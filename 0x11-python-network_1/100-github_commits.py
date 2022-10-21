@@ -13,16 +13,14 @@ if __name__ == '__main__':
     response = requests.get(
         f"https://api.github.com/repos/{owner}/{repo}/commits",
     )
-    if response.status_code > 400:
+    if response.status_code < 400:
         commits = response.json()
         i = 0
         try:
             while i < 10:
                 co = commits[i]
                 name = co.get('commit').get('author').get('name')
-                print(
-                    f"{co.get('sha')}: {name}"
-                )
+                print(f"{co.get('sha')}: {name}")
                 i += 1
         except IndexError:
             pass
