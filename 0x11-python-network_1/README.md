@@ -39,3 +39,7 @@
 ### 10-my_github.py
 
     Takes your GitHub credentials (username and password) and uses the GitHub API to display your id
+
+### 100-github_commits.py
+
+    Lists commits from a github repo
