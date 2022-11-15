@@ -6,20 +6,22 @@ const url = process.argv[2];
 const characterUrl = 'https://swapi-api.hbtn.io/api/people/18/';
 let movies = 0;
 
-request(url, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  }
-  if (response.statusCode === 200) {
-    const results = JSON.parse(body).results;
-    results.forEach(element => {
-      element.characters.forEach(character => {
-        // check for character
-        if (character === characterUrl) {
-          movies++;
-        }
+if (url !== undefined) {
+  request(url, (error, response, body) => {
+    if (error) {
+      console.error(error);
+    }
+    if (response.statusCode === 200) {
+      const results = JSON.parse(body).results;
+      results.forEach(element => {
+        element.characters.forEach(character => {
+          // check for character
+          if (character === characterUrl) {
+            movies++;
+          }
+        });
       });
-    });
-    console.log(movies);
-  }
-});
+      console.log(movies);
+    }
+  });
+}
