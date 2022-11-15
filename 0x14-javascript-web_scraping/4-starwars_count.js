@@ -10,13 +10,16 @@ request(url, (error, response, body) => {
   if (error) {
     console.error(error);
   }
-  JSON.parse(body).results.forEach(element => {
-    element.characters.forEach(character => {
-      // check for character
-      if (character === characterUrl) {
-        movies++;
-      }
+  if (response.statusCode === 200) {
+    let results = JSON.parse(body).results;
+    results.forEach(element => {
+      element.characters.forEach(character => {
+        // check for character
+        if (character === characterUrl) {
+          movies++;
+        }
+      });
     });
-  });
-  console.log(movies);
+    console.log(movies);
+  }
 });
