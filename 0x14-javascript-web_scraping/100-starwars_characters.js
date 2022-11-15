@@ -11,13 +11,13 @@ if (id) {
       console.error(error);
     } else if (response.statusCode === 200) {
       const characters = JSON.parse(body).characters;
-      for (let i = 0; i < characters.length; i++) {
-        request(characters[i], (error, response, body) => {
+      characters.forEach(character => {
+        request(character, (error, response, body) => {
           if (error == null) {
             console.log(JSON.parse(body).name);
           }
         });
-      }
+      });
     }
   });
 }
