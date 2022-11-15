@@ -11,7 +11,7 @@ request(url, (error, response, body) => {
     console.error(error);
   }
   if (response.statusCode === 200) {
-    let results = JSON.parse(body).results;
+    const results = JSON.parse(body).results;
     results.forEach(element => {
       element.characters.forEach(character => {
         // check for character
