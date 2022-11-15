@@ -3,7 +3,6 @@
 const request = require('request');
 
 const url = process.argv[2];
-// const characterUrl = 'https://swapi-api.hbtn.io/api/people/18/';
 let movies = 0;
 
 if (url !== undefined) {
