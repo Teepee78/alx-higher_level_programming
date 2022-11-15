@@ -11,10 +11,9 @@ function printCharacter (characters, i) {
   request(characters[i], (error, response, body) => {
     if (error == null) {
       console.log(JSON.parse(body).name);
+      printCharacter(characters, i + 1);
     }
   });
-
-  printCharacter(characters, i + 1);
 }
 
 if (id) {
