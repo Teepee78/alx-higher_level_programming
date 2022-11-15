@@ -3,7 +3,7 @@
 const request = require('request');
 const id = process.argv[2];
 
-function printCharacter(characters, i) {
+function printCharacter (characters, i) {
   if (characters.length === i) {
     return;
   }
@@ -24,7 +24,6 @@ if (id) {
     if (error) {
       console.error(error);
     } else if (response.statusCode === 200) {
-      
       const characters = JSON.parse(body).characters;
       printCharacter(characters, 0);
     }
